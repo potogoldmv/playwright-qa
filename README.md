@@ -27,7 +27,7 @@ pip install pytest playwright
 python -m playwright install
 ```
 
-### 2. Rulăm testele
+### 2. Rulam testele
 
 ```bash
 python -m pytest
