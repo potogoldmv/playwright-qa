@@ -1,18 +1,9 @@
 # Automatizare QA cu Playwright
-
 **Python + Playwright + Pytest**.
 
 ---
 
-Set de teste automate pentru site-ul demo:
-
-https://formy-project.herokuapp.com
-
-
----
-
 ## Proiectul contine 5 tipuri de teste:
-
 - Form 
 - Checkbox-uri
 - Date picker
@@ -22,7 +13,6 @@ https://formy-project.herokuapp.com
 ---
 
 ## Tehnologii folosite
-
 - Python
 - Playwright (automatizare browser)
 - Pytest (framework de testare)
@@ -31,11 +21,14 @@ https://formy-project.herokuapp.com
 
 ## Cum rulam
 
-### 1. Instalare dependenciees
+### 1. Instalare dependencies
 ```bash
 pip install pytest playwright
 python -m playwright install
+```
 
-2. Rulam Testele cu pytest 
+### 2. Rulăm testele
 
+```bash
 python -m pytest
+```
