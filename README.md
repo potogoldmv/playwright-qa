@@ -21,7 +21,7 @@ https://formy-project.herokuapp.com
 
 ---
 
-## ⚙️ Tehnologii folosite
+## Tehnologii folosite
 
 - Python
 - Playwright (automatizare browser)
@@ -36,5 +36,6 @@ https://formy-project.herokuapp.com
 pip install pytest playwright
 python -m playwright install
 
-### 2. Rulam Testele cu pytest 
+2. Rulam Testele cu pytest 
+
 python -m pytest
