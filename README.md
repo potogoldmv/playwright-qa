@@ -15,7 +15,6 @@ https://formy-project.herokuapp.com
 
 - Form 
 - Checkbox-uri
-- Radio buttons
 - Date picker
 - Switch window (tab nou + alert)
 - Buttons
