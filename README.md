@@ -29,23 +29,13 @@ Proiectul contine 5 tipuri principale de teste:
 
 ## Structura proiectului
 
-playwright-qa/
-│
-├── pages/
-│   ├── form_page.py
-│   ├── checkbox_page.py
-│   ├── datepicker_page.py
-│   ├── switch_page.py
-│   ├── buttons_page.py
-│
-├── tests/
-│   ├── test_form.py
-│   ├── test_checkboxes.py
-│   ├── test_datepicker.py
-│   ├── test_switch.py
-│   ├── test_buttons.py
-│
-└── README.md
+Branch Master
+
+Base Version
+
+Ai Pom Upgrade
+
+Proiectul refactorizat in POM cu Integrare AI pt Forms si Checkboxes
 
 ---
 
