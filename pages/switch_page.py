@@ -1,3 +1,6 @@
+from pages.locators.switch_locators import SwitchLocators
+
+
 class SwitchPage:
     def __init__(self, page):
         self.page = page
@@ -8,8 +11,9 @@ class SwitchPage:
     def open_new_tab(self):
         with self.page.context.expect_page() as new_page_info:
             self.page.click("#new-tab-button")
-        return new_page_info.value
+
+        new_page = new_page_info.value
+        return new_page
 
     def trigger_alert(self):
-        self.page.on("dialog", lambda d: d.accept())
-        self.page.click("#alert-button")
+        self.page.click(SwitchLocators.ALERT_BUTTON)

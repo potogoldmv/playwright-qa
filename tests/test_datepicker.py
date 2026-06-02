@@ -1,5 +1,5 @@
 from playwright.sync_api import sync_playwright
-from pages.datepicker_page import DatepickerPage
+from pages.datepicker_page import DatePickerPage
 
 
 def test_datepicker():
@@ -7,9 +7,9 @@ def test_datepicker():
         browser = p.chromium.launch(headless=False)
         page = browser.new_page()
 
-        dp = DatepickerPage(page)
+        dp = DatePickerPage(page)
         dp.open()
 
-        dp.select_date("05/29/2026")
+        dp.pick_date("05/29/2026")
 
         browser.close()

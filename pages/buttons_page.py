@@ -1,3 +1,6 @@
+from pages.locators.buttons_locators import ButtonsLocators
+
+
 class ButtonsPage:
     def __init__(self, page):
         self.page = page
@@ -6,4 +9,7 @@ class ButtonsPage:
         self.page.goto("https://formy-project.herokuapp.com/buttons")
 
     def click_primary(self):
-        self.page.click(".btn.btn-lg.btn-primary")
+        self.page.click(ButtonsLocators.PRIMARY)
+
+    def click_success(self):
+        self.page.click(ButtonsLocators.SUCCESS)

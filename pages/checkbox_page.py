@@ -1,3 +1,6 @@
+from pages.locators.checkbox_locators import CheckboxLocators
+
+
 class CheckboxPage:
     def __init__(self, page):
         self.page = page
@@ -6,10 +9,10 @@ class CheckboxPage:
         self.page.goto("https://formy-project.herokuapp.com/checkbox")
 
     def check_first(self):
-        self.page.click("#checkbox-1")
+        self.page.check(CheckboxLocators.CHECKBOX_1)
 
     def check_second(self):
-        self.page.click("#checkbox-2")
+        self.page.check(CheckboxLocators.CHECKBOX_2)
 
     def check_third(self):
-        self.page.click("#checkbox-3")
+        self.page.check(CheckboxLocators.CHECKBOX_3)

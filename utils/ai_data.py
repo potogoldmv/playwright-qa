@@ -2,7 +2,7 @@ from openai import OpenAI
 import json
 import re
 
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="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")
 
 
 def extract_json(raw: str):
