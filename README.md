@@ -1,34 +1,83 @@
 # Automatizare QA cu Playwright
-**Python + Playwright + Pytest**.
+
+## Descriere
+
+Acest proiect este un framework simplu de automatizare QA construit cu Python, Playwright si Pytest.  
+Acopera scenarii de testare UI web folosind Page Object Model (POM).
 
 ---
 
-## Proiectul contine 5 tipuri de teste:
-- Form 
-- Checkbox-uri
-- Date picker
-- Switch window (tab nou + alert)
-- Buttons
+## Tipuri de teste
+
+Proiectul contine 5 tipuri principale de teste:
+
+- Form - completarea formularelor web
+- Checkbox-uri - selectarea optiunilor
+- Date Picker - selectarea datelor din calendar
+- Switch Window - gestionarea tab-urilor noi si a alertelor
+- Buttons - interactiuni simple UI (click, hover)
 
 ---
 
 ## Tehnologii folosite
+
 - Python
-- Playwright (automatizare browser)
-- Pytest (framework de testare)
+- Playwright
+- Pytest
 
 ---
 
-## Cum rulam
+## Structura proiectului
 
-### 1. Instalare dependencies
-```bash
-pip install pytest playwright
+playwright-qa/
+│
+├── pages/
+│   ├── form_page.py
+│   ├── checkbox_page.py
+│   ├── datepicker_page.py
+│   ├── switch_page.py
+│   ├── buttons_page.py
+│
+├── tests/
+│   ├── test_form.py
+│   ├── test_checkboxes.py
+│   ├── test_datepicker.py
+│   ├── test_switch.py
+│   ├── test_buttons.py
+│
+└── README.md
+
+---
+
+## Cum rulam proiectul
+
+### Instalare dependinte
+
+pip install pytest playwright  
 python -m playwright install
-```
 
-### 2. Rulam testele
+---
 
-```bash
+### Rulare teste
+
+Rulare toate testele  
 python -m pytest
-```
+
+Rulare cu log-uri (debug)  
+python -m pytest -s
+
+Rulare folder tests  
+python -m pytest tests
+
+Rulare un singur test  
+python -m pytest tests/test_form.py
+
+---
+
+## Scopul proiectului
+
+Acest proiect este creat pentru invatare si practica in QA automation:
+
+- automatizare UI cu Playwright
+- structura Page Object Model (POM)
+- organizarea testelor cu Pytest
