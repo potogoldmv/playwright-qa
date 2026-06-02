@@ -29,11 +29,11 @@ Proiectul contine 5 tipuri principale de teste:
 
 ## Structura proiectului
 
-Branch Master
+- Branch Master
 
 Base Version
 
-Ai Pom Upgrade
+- Branch Ai Pom Upgrade
 
 Proiectul refactorizat in POM cu Integrare AI pt Forms si Checkboxes
 
