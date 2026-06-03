@@ -48,20 +48,73 @@ python -m playwright install
 
 ---
 
-### Rulare teste
+## ⚙️ Setup proiect
 
-Rulare toate testele  
-python -m pytest
+### 1. Clone repository
 
-Rulare cu log-uri (debug)  
-python -m pytest -s
+git clone https://github.com/potogoldmv/playwright-qa.git
+cd playwright-qa
 
-Rulare folder tests  
-python -m pytest tests
+---
 
-Rulare un singur test  
-python -m pytest tests/test_form.py
+### 2. Creeaza virtual environment
 
+python -m venv venv
+
+---
+
+### 3. Activeaza virtual environment
+
+Windows PowerShell:
+venv\Scripts\Activate.ps1
+
+CMD:
+venv\Scripts\activate.bat
+
+---
+
+### 4. Instaleaza dependintele
+
+pip install -r requirements.txt
+
+---
+
+### 5. Instaleaza Playwright browsers
+
+playwright install
+
+---
+
+## ▶️ Rulare teste
+
+### Ruleaza toate testele
+
+pytest
+
+---
+
+### Ruleaza testele cu output detaliat
+
+pytest -s
+
+---
+
+### Ruleaza un singur test
+
+pytest tests/test_form.py -s
+
+---
+
+## 🤖 AI Integration
+
+Unele teste folosesc OpenAI API pentru generare dinamica de date:
+- nume si job titles
+- date pentru formular
+- valori pentru checkbox-uri
+
+Daca AI nu functioneaza:
+- verifica API key in utils/ai_data.py
+- verifica conexiunea la internet
 ---
 
 ## Scopul proiectului
