@@ -90,19 +90,19 @@ playwright install
 
 ### Ruleaza toate testele
 
-pytest
+python -m pytest 
 
 ---
 
 ### Ruleaza testele cu output detaliat
 
-pytest -s
+python -m pytest -s
 
 ---
 
 ### Ruleaza un singur test
 
-pytest tests/test_form.py -s
+python -m pytest pytest tests/test_form.py -s
 
 ---
 
