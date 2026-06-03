@@ -53,6 +53,7 @@ python -m playwright install
 ### 1. Clone repository
 
 git clone https://github.com/potogoldmv/playwright-qa.git
+
 cd playwright-qa
 
 ---
