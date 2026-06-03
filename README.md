@@ -86,7 +86,7 @@ playwright install
 
 ---
 
-## ▶️ Rulare teste
+## Rulare teste
 
 ### Ruleaza toate testele
 
@@ -106,7 +106,12 @@ python -m pytest pytest tests/test_form.py -s
 
 ---
 
-## 🤖 AI Integration
+##  AI Integration
+
+Trebuie setat fie in cod (utils->ai_data si completam cu api key-ul nostru) 
+sau
+Windows PowerShell (deschis in folder)
+setx OPENAI_API_KEY "your_api_key_here"
 
 Unele teste folosesc OpenAI API pentru generare dinamica de date:
 - nume si job titles
