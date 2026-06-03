@@ -41,14 +41,10 @@ Proiectul refactorizat in POM cu Integrare AI pt Forms si Checkboxes
 
 ## Cum rulam proiectul
 
-### Instalare dependinte
-
-pip install pytest playwright  
-python -m playwright install
 
 ---
 
-## ⚙️ Setup proiect
+## Setup proiect
 
 ### 1. Clone repository
 
